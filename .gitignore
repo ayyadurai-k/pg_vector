@@ -1,0 +1,84 @@
+# === PYTHON GENERAL ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Bytecode cache directories
+.cache/
+.pytest_cache/
+
+# === DJANGO-SPECIFIC ===
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+.env
+.env.*
+.envrc
+secrets.json
+
+# Static & media
+staticfiles/
+static/
+media/
+
+# Django migrations (optional to ignore compiled migrations)
+**/migrations/__pycache__/
+**/migrations/*.pyc
+
+# === VIRTUAL ENVIRONMENTS ===
+venv/
+env/
+ENV/
+.virtualenv/
+.venv/
+
+# === TESTING & COVERAGE ===
+.coverage
+.tox/
+.nox/
+htmlcov/
+coverage.xml
+*.cover
+*.log
+.junit.xml
+
+# === IDEs & EDITORS ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.bak
+
+# === OS-SPECIFIC ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# === DOCKER / BUILD ARTIFACTS ===
+*.tar
+*.tgz
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# === CELERY / TASK QUEUES ===
+celerybeat-schedule
+celerybeat.pid
+
+# === SENTRY / ERROR LOGGING ===
+*.log
+
+# === OPTIONAL: Ignore secrets folders or compiled assets ===
+*.pem
+*.key
+*.crt
+certs/
